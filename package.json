@@ -1,0 +1,21 @@
+{
+  "name": "chatproject",
+  "packageManager": "yarn@4.12.0",
+  "dependencies": {
+    "@fastify/cookie": "^11.1.1",
+    "@fastify/cors": "^11.3.0",
+    "@fastify/formbody": "^8.0.2",
+    "bcrypt": "^6.0.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.10.0",
+    "graphql": "16",
+    "jsonwebtoken": "^9.0.3",
+    "mercurius": "^16.9.0",
+    "mongoose": "^9.7.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6",
+    "@types/jsonwebtoken": "^9"
+  }
+}

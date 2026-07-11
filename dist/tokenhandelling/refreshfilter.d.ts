@@ -1,0 +1,3 @@
+import { FastifyReply, FastifyRequest } from 'fastify';
+export declare const refreshfilter: (req: FastifyRequest, resp: FastifyReply) => FastifyReply<import("fastify").RouteGenericInterface, import("fastify").RawServerDefault, import("node:http").IncomingMessage, import("node:http").ServerResponse<import("node:http").IncomingMessage>, unknown, import("fastify").FastifySchema, import("fastify").FastifyTypeProviderDefault, unknown>;
+//# sourceMappingURL=refreshfilter.d.ts.map
