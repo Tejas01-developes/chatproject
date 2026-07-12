@@ -7,24 +7,29 @@ interface customreq extends FastifyRequest{
     userId?:string
 }
 
-export const accessfilter=(req:customreq,resp:FastifyReply,next:HookHandlerDoneFunction)=>{
+export const queryaccessfilter=(req:customreq,resp:FastifyReply)=>{
     const token=req.headers.authorization
     const access=token?.split(" ")?.[1]
 
     if(!access){
-       return resp.status(400).send({success:false,message:"access token is not there"})
+       return {
+        userId:null
+       }
     }
 try{
-    console.log("access",access)
+  
 const decode=jwt.verify(access,process.env.ACCESS_KEY as string) as JwtPayload
 
-req.userId=decode.id
-console.log(req.userId)
-next()
+return{
+    userId:decode.id
+}
+
 
 }catch(err){
     console.log(err)
-    return resp.status(400).send({success:false,message:"access filter failed"})
+    return{
+        userId:null
+    }
 }
 
 }

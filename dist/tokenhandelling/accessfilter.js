@@ -14,6 +14,7 @@ const accessfilter = (req, resp, next) => {
         return resp.status(400).send({ success: false, message: "access token is not there" });
     }
     try {
+        console.log("access", access);
         const decode = jsonwebtoken_1.default.verify(access, process.env.ACCESS_KEY);
         req.userId = decode.id;
         console.log(req.userId);
