@@ -20,7 +20,7 @@ app.register(cors,{
     allowedHeaders:["Content-Type","Authorization"],
     credentials:true,
 })
-app.register(routes,{prefix:"/apis"})
+
 app.register(formbody)
 app.register(cookie)
 app.register(mercurius,{

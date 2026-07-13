@@ -1,1 +1,1 @@
-{"version":3,"file":"resolver.d.ts","sourceRoot":"","sources":["../../src/resolvers/resolver.ts"],"names":[],"mappings":""}
+{"version":3,"file":"resolver.d.ts","sourceRoot":"","sources":["../../src/resolvers/resolver.ts"],"names":[],"mappings":"AAIA,UAAU,OAAO;IACb,OAAO,EAAC,MAAM,CAAC;IACf,IAAI,EAAC,MAAM,CAAA;CACd;AAGD,eAAO,MAAM,OAAO;;2BAGM,GAAG,QAAM,OAAO,QAAM,GAAG;;;;;;8BAwCtB,GAAG,SAAO,GAAG,QAAM,GAAG;;;;;;;iCA4BxB,GAAG,SAAO,GAAG,OAAK,GAAG;;;CAO/C,CAAA"}

@@ -13,6 +13,7 @@ export const resolve={
 Mutation:{
     sendmsg:async(_parent:any,args:msgtype,_ctx:any)=>{
         const user=_ctx.userId
+        // console.log("userid",user)
         if(!user){
             return{
                 success:false, 

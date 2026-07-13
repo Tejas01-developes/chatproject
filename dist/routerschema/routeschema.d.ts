@@ -1,0 +1,2 @@
+export declare const routeschema = "\ntype responsetype{\n    success:Boolean\n    message:String\n}\n\ntype Mutation{\nsendmsg(message:String!,toid:String!):responsetype\n}\n\ntype msgtype{\n    message:String\n}\n\n\ntype Query{\n    getmessage(toid:String!):[msgtype!]!\n}\n\n\ntype Subscription{\n    sendmessage:msgtype\n}\n\n";
+//# sourceMappingURL=routeschema.d.ts.map
