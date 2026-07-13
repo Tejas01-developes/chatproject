@@ -1,16 +1,17 @@
 import { gql } from "@apollo/client";
 
 export const addmessage=gql`
-mutation{
-    sendmsg(message:$message){
-        success
-        message
-    }
+mutation sendMsg($message:String,$toid:String){
+sendmsg(message:$message,toid:$toid){
+success,
+message
 }
+}
+
 `
 
 export const getmessage=gql`
-query{
+query getMsg($toid:String){
     getmessage(toid:$toid){
         message
     }
@@ -19,7 +20,7 @@ query{
 
 
 export const subscribe=gql`
-subscription{
+subscription sendSubmsg{
     sendmessage{
         message
     }
