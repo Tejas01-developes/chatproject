@@ -72,7 +72,7 @@ return alert(err)
 
 useSubscription(subscribe,{
     onData:({data})=>{
-        const livemessage=data.data.sendmessage
+        const livemessage=data?.data?.sendmessage
         setmsg(livemessage)
     }
 })
