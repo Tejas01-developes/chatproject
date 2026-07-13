@@ -1,4 +1,4 @@
-import { FastifyReply, FastifyRequest, HookHandlerDoneFunction } from 'fastify';
+import { FastifyReply, FastifyRequest } from 'fastify';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -7,7 +7,7 @@ interface customreq extends FastifyRequest{
     userId?:string
 }
 
-export const queryaccessfilter=(req:customreq,resp:FastifyReply)=>{
+export const queryaccessfilter=(req:customreq,_resp:FastifyReply)=>{
     const token=req.headers.authorization
     const access=token?.split(" ")?.[1]
 
